@@ -1,1 +1,27 @@
-
+<html>
+<head>
+    <title>Password Generator</title>
+    <link rel="icon" href="Trobo.jpg" type="image"/>
+</head>
+<body>
+    <p id="Password"></p>
+    <script>
+        var pin = 0;
+        pin = floor(random(11111, 99999));
+        var dec = floor(random(0, 3));
+        if (dec === 0) {
+            var pref = "Kut";
+        }
+        if (dec === 1) {
+            var pref = "Pon";
+        }
+        if (dec === 2) {
+            var pref = "Fos";
+        }
+        if (dec === 3) {
+            var pref = "San";
+        }
+        document.getElementById("Password").innerHTML = "Password Generated Is : " + pref + pin;
+    </script>
+</body>
+</html>
